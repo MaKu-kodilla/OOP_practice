@@ -19,15 +19,15 @@ onePlusOne.printInfo();
 
 // diffrent method
 
-var Phone = {
+var examplePhone= {
     brand: "Huaweii",
     model: "P20 Pro",
     price: 3500,
     color: "white",
     isAvaliable: true,
-        Description: function () {
-            console.log(this.brand + " " + this.model + " Price: " + this.price + " Color: " + this.color + "." );
-        }
+    description: function () {
+        console.log(this.brand + " " + this.model + " Price: " + this.price + " Color: " + this.color + "." );
+    }
 }
 
-Phone.Description();
+examplePhone.description();
