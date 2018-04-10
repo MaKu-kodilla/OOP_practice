@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Permanent+Marker');
+
+body {
+    background-color: #009900;
+    text-align: center;
+}
+.board {
+    width: 1200px;
+    width: 100%;
+}
+.board h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: gainsboro;
+    text-shadow: 2px 4px black;
+    font-family: 'Acme', sans-serif;
+}
+.create-column {
+    background-color: yellow;
+    border-radius: 50%;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Permanent Marker', cursive;
+    box-shadow: 5px 5px;
+}
+.create-column:hover {
+    transform: scale(1.15);
+    transition: transform .5s ease-in;
+}
+.column-container {
+    width: 33%;
+    text-align: cetner;
+    margin: 30px auto;
+}
+.column {
+    background-color: gainsboro;
+    box-shadow: 7px 7px 7px black;
+}
+.column-title {
+    font-size: 30px;
+    font-family: 'Acme', sans-serif;
+    padding: 15px;
+}
+button.add-card {
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 2px 2px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 20px;
+}
+.column-card-list {
+    list-style: none;
+    padding: 0px;
+}
+.btn-delete {
+    border: none;
+    background-color: none;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+li.card {
+    padding-bottom: 10px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+
+}
+p.card-description {
+    font-family: 'Acme', sans-serif;
+    font-size: 16;
+}
+
+
