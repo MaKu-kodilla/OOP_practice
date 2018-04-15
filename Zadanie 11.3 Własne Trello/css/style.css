@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Acme|Permanent+Marker');
 
 body {
-    background-color: #009900;
+    width: 100%;
+    background-image: url(../images/kanban-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
+    overflow-x: hidden;   
 }
 .board {
     width: 1200px;
@@ -11,7 +15,7 @@ body {
 .board h1 {
     font-size: 50px;
     text-transform: uppercase;
-    color: gainsboro;
+    color: white;
     text-shadow: 2px 4px black;
     font-family: 'Acme', sans-serif;
 }
@@ -30,18 +34,24 @@ body {
     transition: transform .5s ease-in;
 }
 .column-container {
-    width: 33%;
+    width: 100%;
     text-align: cetner;
     margin: 30px auto;
+    display: flex;
 }
 .column {
-    background-color: gainsboro;
+    background-image: url(../images/paper-column.jpeg);
+    background-size: cover;
     box-shadow: 7px 7px 7px black;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 30%;
 }
 .column-title {
     font-size: 30px;
     font-family: 'Acme', sans-serif;
-    padding: 15px;
+    padding: 20px 0;
+    margin: 0;
 }
 button.add-card {
     background-color: yellow;
@@ -57,10 +67,11 @@ button.add-card {
 .column-card-list {
     list-style: none;
     padding: 0px;
+    min-height: 50px;
 }
 .btn-delete {
     border: none;
-    background-color: none;
+    background-color: white;
     color: red;
     font-size: 15px;
     cursor: pointer;
@@ -73,9 +84,18 @@ li.card {
     justify-content: center;
 
 }
-p.card-description {
+.card-description {
     font-family: 'Acme', sans-serif;
-    font-size: 16;
+    font-size: 16px;
+    margin: 0;
+}
+.card-placeholder {
+    margin: 0 auto;
+    width: 40%;
+    background-color: red;
+    opacity: 0.5;
+    text-decoration: underline;
+    min-height: 1px;
 }
 
 
