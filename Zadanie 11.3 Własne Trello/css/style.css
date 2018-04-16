@@ -35,16 +35,17 @@ body {
 }
 .column-container {
     width: 100%;
-    text-align: cetner;
+    text-align: center;
     margin: 30px auto;
     display: flex;
+    flex-wrap: wrap;
 }
 .column {
     background-image: url(../images/paper-column.jpeg);
     background-size: cover;
     box-shadow: 7px 7px 7px black;
     flex-direction: row;
-    margin: 0 auto;
+    margin: 20px auto;
     width: 30%;
 }
 .column-title {
